@@ -1,4 +1,9 @@
 package org.sdia.ebankingbackend.repositories;
 
-public interface CustomerRepository {
+import org.sdia.ebankingbackend.entities.Customer;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+public interface CustomerRepository extends JpaRepository<Customer,Long> {
+
 }

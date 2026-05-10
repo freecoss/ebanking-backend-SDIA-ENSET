@@ -1,4 +1,8 @@
 package org.sdia.ebankingbackend.repositories;
 
-public interface BankAccountRepository {
+import org.sdia.ebankingbackend.entities.BankAccount;
+import org.sdia.ebankingbackend.entities.Customer;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BankAccountRepository extends JpaRepository<BankAccount,String> {
 }
